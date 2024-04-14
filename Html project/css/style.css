@@ -1,0 +1,189 @@
+/* Common CSS for all screens */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dbd9ec;
+    /* Change body background color */
+}
+
+#title {
+    color: white;
+    background-color: #4a90e2;
+    /* Change header background color */
+    border: 5px solid #e1dfd9;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 4vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    padding: 1%;
+    float: left;
+    margin: auto;
+    border: 2px solid rgb(220, 220, 237);
+    border-radius: 10%;
+    background-color: rgb(103, 103, 251);
+    text-align: center;
+    color: aliceblue;
+    margin: 0 15px;
+    font-size: larger;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+}
+#container {
+    margin-top: 5px;
+    padding: auto;
+} 
+
+#left {
+    float: left;
+    width: 25%;
+    margin: 10px;
+    border: 2px solid rgb(197, 197, 204);
+    overflow-y: auto;
+    max-height: 450px;
+    
+}
+
+
+
+#middle {
+    float: left;
+    width: 48%;
+    margin: 10px;
+    border: 2px solid rgb(30, 30, 35);
+    padding: 0.5%;
+    /* overflow-y: auto;
+    max-height: 450px; */
+}
+#c{
+    overflow-y: auto;
+    max-height: 600px;
+    
+}
+#right {
+    float: left;
+    width: 20%;
+    margin: 10px;
+    border: 2px solid rgb(197, 197, 204);
+}
+
+.htitle {
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(240, 46, 46);
+    background-color: rgb(234, 229, 222);
+}
+
+.sub {
+    margin-left: 5%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+#mhead{
+    text-align: center;
+    font-size: 1.5vw;
+    color: rebeccapurple;
+}
+#text{
+    font-size: 3vw;
+}
+
+hr{
+    margin: 0% 5%;
+}
+
+#middleg{
+    margin: 5%;
+    margin-top: 2%;
+    float: left;
+    width: 85%;
+    border: 2px solid rgb(22, 22, 28);
+    padding: 2%;
+    overflow-y: auto;
+    max-height: 550px;
+}
+ .about-section {
+     padding: 50px 0;
+     text-align: center;
+ }
+
+ .about-section h2 {
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+ }
+
+ .about-section p {
+     font-size: 1.2rem;
+     color: #555;
+     margin-bottom: 30px;
+     overflow-y: auto;
+     max-height: 400px;
+ }
+ .ac{
+    border: 1px solid gray;
+    text-align: left;
+    margin:0% 10%;
+    border-radius: 50%;
+    padding: 5%;
+    background-color: #9bc7f9;
+    color: antiquewhite;
+ }
+ .ac1 {
+     border: 1px solid gray;
+     text-align: left;
+     margin: 0% 10%;
+     border-radius: 10%;
+     padding: 2%;
+     background-color: #9bc7f9;
+     color: antiquewhite;
+ }
+/* CSS for laptop screens */
+@media only screen and (min-width: 1111px) {
+    nav a {
+        width: 20%;
+    }
+}
+
+/* CSS for tablet screens */
+@media only screen and (max-width: 1111px) {
+
+    #left,
+    #middle,
+    #right {
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+    }
+}
+
+/* CSS for mobile screens */
+@media only screen and (max-width: 480px) {
+    #title {
+        font-size: 6vw;
+    }
+
+    nav a {
+        width: 100%;
+        margin: 5px;
+    }
+}
